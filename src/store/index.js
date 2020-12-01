@@ -1,8 +1,10 @@
-import { createStore } from 'vuex'
+import {
+  createStore
+} from 'vuex'
 import state from './state'
 import * as mutations from './mutations'
 import * as actions from './actions'
-import * as getter from './getter'
+import * as getters from './getters'
 
 export default createStore({
   // state: {
@@ -16,5 +18,5 @@ export default createStore({
   state,
   mutations,
   actions,
-  getter
+  getters
 })

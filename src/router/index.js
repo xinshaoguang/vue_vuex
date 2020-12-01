@@ -22,9 +22,9 @@ const routes = [
     component: () => import('../views/mutations.vue')
   },
   {
-    path: '/getter',
-    name: 'getter',
-    component: () => import('../views/getter.vue')
+    path: '/getters',
+    name: 'getters',
+    component: () => import('../views/getters.vue')
   },
   
 ]
