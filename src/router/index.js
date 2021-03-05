@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+// import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
@@ -29,8 +29,40 @@ const routes = [
   
 ]
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+// const router = createRouter({
+//   history: createWebHistory(process.env.BASE_URL),
+//   routes
+// })
+
+// export default router
+
+
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+// import basicLayout from '../layout/basicLayout.vue'
+// import importRoutes from './routerConfig'
+
+Vue.use(VueRouter)
+
+// const routes = [{
+//     path: '/',
+//     name: 'basicLayout',
+//     component: basicLayout,
+//     children: [
+//       {
+//         path: '/index',
+//         name: 'index',
+//         component: () => import('@/views/index.vue')
+//       },
+//       ...importRoutes
+//     ]
+//   },
+
+// ]
+
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes
 })
 

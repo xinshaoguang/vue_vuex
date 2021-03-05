@@ -1,11 +1,12 @@
 <template>
-  <div id="nav">
+  <div id="app">
     <router-link to="/state">state</router-link> |
     <router-link to="/getters">getter</router-link> |
     <router-link to="/mutations">mutations</router-link> |
     <router-link to="/actions">actions</router-link>
+   
+    <router-view/>
   </div>
-  <router-view />
 </template>
 <script>
 export default {
@@ -38,7 +39,7 @@ export default {
   color: #2c3e50;
 }
 
-#nav {
+#app {
   padding: 30px;
 
   a {
